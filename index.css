@@ -1,0 +1,66 @@
+body {
+  margin: 0;
+}
+
+.hero {
+  background-image: url(https://i.imgur.com/E5gN1eK.gif);
+  background-size: cover;
+  width: 100vw;
+  height: 100vh;
+
+  display: grid;
+  /* align-items will position on the y-acis (vertically) */
+  align-items: center; /* (only works with display grid!) */
+  /* jusitfy-items will position on the x-axis (horizontally) */
+  justify-items: center; /* (only works with display grid!) */
+  /* other possible useful values: start, center, end */
+}
+
+.my-content {
+  width: 50%;
+  height: 50%;
+  background-color: black;
+  border: rgba(7, 122, 7, 0.712);
+  border-style: solid;
+  border-radius: 10%;
+  font-family: "Roboto Mono";
+  color: rgba(7, 122, 7, 0.712);
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: 1fr 1fr 1fr;
+  justify-items: center;
+  align-items: center;
+  text-align: center;
+}
+
+.vielen-dank {
+  text-align: center;
+}
+
+.grid-container {
+  display: grid;
+  /* values are seperated with an empty space: */
+  grid-template-columns: 100px 200px; /* this means 2 columns: first column 100px (width), second column 200px (width) */
+  grid-template-rows: 100px 50px; /*  this means 2 rows: first row 100px (height), second row 50px (height)*/
+}
+
+.grid-container-fr {
+  display: grid;
+  /* values are seperated with an empty space: */
+  grid-template-columns: 100px 1fr; /* this means 2 columns: first column 50% (width), second column 50% (width) */
+  grid-template-rows: 100px 50px; /*  this means 2 rows: first row 100px (height), second row 50px (height)*/
+}
+
+.first-child {
+  background-color: aquamarine;
+}
+
+.sec-child {
+  background-color: red;
+}
+.third-child {
+  background-color: purple;
+}
+.fourth-child {
+  background-color: yellow;
+}
